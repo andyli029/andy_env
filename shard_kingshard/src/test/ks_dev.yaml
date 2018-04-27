@@ -1,0 +1,35 @@
+addr: 0.0.0.0:9696
+user: root
+password: "111111"
+web_addr: 0.0.0.0:9797
+web_user: admin
+web_password: admin
+log_path: .
+log_level: debug
+log_sql: on
+slow_log_time: 500
+allow_ips: ""
+blacklist_sql_file: ""
+proxy_charset: utf8
+nodes:
+- name: node1
+  down_after_noalive: 32
+  max_conns_limit: 320
+  user: root
+  password: abfiqwoLs7Z
+  master: 10.0.2.9:3306
+  slave: 10.0.2.9:3306
+#,10.0.2.16:3306
+schema:
+  nodes:
+  - node1
+  default: node1
+  shard:
+  - db: ""
+    table: ""
+    key: ""
+    nodes: []
+    locations: []
+    type: ""
+    table_row_limit: 0
+    date_range: []

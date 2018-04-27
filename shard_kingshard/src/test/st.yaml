@@ -1,0 +1,8 @@
+addr: 192.168.56.1:3307..
+user:  root
+password: root
+dbname: kingshard
+table: mbk_bikes
+sqlfile: v.sql
+num: 4
+

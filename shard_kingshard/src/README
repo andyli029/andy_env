@@ -1,0 +1,10 @@
+##
+follow the sharding rules in the yaml to shard the sqlfile in the dir "/tmp/.shard/"
+and to exc the sql to the nodes in the yaml following the sharding rules
+just operate two step belows:
+
+make
+./shardtable -config=ks_st.yaml -sqlfile=v.sql
+
+Notice:
+    please clean the dir: /tmp/.shard/
